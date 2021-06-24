@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">InterProject</string>
+    <string name="helloIntern">Hello!</string>
+    <string name="welComeIntern">Welcome to YoParker</string>
+    <string name="curntLocat">Your Current Locations</string>
+    <string name="otherLocat">Some other locations</string>
+    <string name="otpConfirmedTxt">OTP Confirmed</string>
+    <string name="verificationSuccessfulTxt">VERIFICATION SUCCESSFUL !</string>
+    <string name="okTxt">OK</string>
+    <string name="registerTxt">Realiable Parking and Easy to access</string>
+    <string name="loginSignupTxt">LOGIN / SIGNUP</string>
+</resources>

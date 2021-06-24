@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/interback"
+    android:orientation="vertical"
+    android:textAlignment="center">
+
+    <TextView
+        android:id="@+id/helloIntern"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="75dp"
+        android:gravity="center"
+        android:text="@string/helloIntern"
+        android:textColor="@color/mainColorIntern"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/welcomeIntern"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/welComeIntern"
+        android:textColor="@color/secondaryColor"
+        android:textSize="35sp"
+        android:textStyle="normal"/>
+
+    <Button
+        android:id="@+id/currentLocationBtn"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/main_button_pattern"
+        android:text="@string/curntLocat"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:icon="@drawable/ic_baseline_location_searching_24"
+        app:iconTint="@color/white" />
+
+    <Button
+        android:id="@+id/otherLocationBtn"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/other_button_pattern"
+        android:text="@string/otherLocat"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:icon="@drawable/ic_baseline_zoom_out_map_24"
+        app:iconTint="@color/white" />
+
+</LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
