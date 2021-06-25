@@ -96,7 +96,7 @@
                 android:id="@+id/resendCodeBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
+                android:layout_marginLeft="95dp"
                 android:background="@color/transparent"
                 android:text="@string/resendCodeText"
                 android:textAlignment="center"

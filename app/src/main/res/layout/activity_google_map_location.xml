@@ -19,8 +19,7 @@
             android:id="@+id/toolBar"
             layout="@layout/activity_toolbar" />
 
-        <include
-            layout="@layout/activity_bottom_bar" />
+        <include layout="@layout/content_map" />
 
     </LinearLayout>
 
