@@ -9,4 +9,19 @@
     <string name="okTxt">OK</string>
     <string name="registerTxt">Realiable Parking and Easy to access</string>
     <string name="loginSignupTxt">LOGIN / SIGNUP</string>
+    <string name="verificationCodeTitleTxt">Verification Code</string>
+    <string name="continueTxt">CONTINUE</string>
+    <string name="verificationCodeMessageTxt">Please type the verification code sent to your number</string>
+    <string name="resendCodeText">Resend Code</string>
+    <string name="apptitlename">Banglore</string>
+    <string name="parking">Parking</string>
+    <string name="booking">Booking</string>
+    <string name="wallets">Wallets</string>
+    <string name="me">Me</string>
+    <string name="appTitleName">YoParker</string>
+    <string name="drawerHomeName">HOME</string>
+    <string name="drawerDashboard">DASHBOARD</string>
+    <string name="drawerAboutUs">ABOUT US</string>
+    <string name="drawerLogoutName">LOGOUT</string>
+    <string name="mobileNumber">Mobile Number</string>
 </resources>

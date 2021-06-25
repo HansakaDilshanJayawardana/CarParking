@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/googMapLocation_layout"
+    tools:context=".google_map_location">
+
+    <LinearLayout
+        android:id="@+id/googMapLocation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:textAlignment="center">
+
+        <include
+            android:id="@+id/toolBar"
+            layout="@layout/activity_toolbar" />
+
+        <include
+            layout="@layout/activity_bottom_bar" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/transparent">
+
+        <include
+            android:id="@+id/navigationDrawer"
+            layout="@layout/activity_navigation_drawer" />
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

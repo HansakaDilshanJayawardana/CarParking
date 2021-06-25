@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/parkingNav"
+        android:icon="@drawable/ic_parking"
+        android:title="@string/parking" />
+
+    <item
+        android:id="@+id/bookingNav"
+        android:icon="@drawable/ic_booking"
+        android:title="@string/booking" />
+
+    <item
+        android:id="@+id/walletsNav"
+        android:icon="@drawable/ic_baseline_account_balance_wallet_24"
+        android:title="@string/wallets" />
+
+    <item
+        android:id="@+id/meNav"
+        android:icon="@drawable/ic_me"
+        android:title="@string/me" />
+
+</menu>

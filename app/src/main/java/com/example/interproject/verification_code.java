@@ -7,24 +7,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class login_signup extends AppCompatActivity {
+public class verification_code extends AppCompatActivity {
     //Initialize Variable
-    Button loginSignupBtn;
+    Button continueBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_signup);
+        setContentView(R.layout.activity_verification_code);
 
         //Assign Variable
-        loginSignupBtn = findViewById(R.id.loginSignupBtn);
+        continueBtn = findViewById(R.id.continueBtn);
 
-        //Direct to OTP Verification Interface
-        loginSignupBtn.setOnClickListener(new View.OnClickListener() {
+        //Direct to OTP Confirmation Interface
+        continueBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent otpVerificationIntent = new Intent(login_signup.this, verification_code.class);
-                startActivity(otpVerificationIntent);
+                Intent otpConfiramtionIntent = new Intent(verification_code.this, otp_Confirmation_activity.class);
+                startActivity(otpConfiramtionIntent);
                 finish();
             }
         });

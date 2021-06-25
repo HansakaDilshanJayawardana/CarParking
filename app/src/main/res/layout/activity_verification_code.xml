@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".verification_code">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/other_background"
+        android:orientation="vertical"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/verificationCodeTitleId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:text="@string/verificationCodeTitleTxt"
+            android:textColor="@color/thirdColor"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/verificationCodeMessageId"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:text="@string/verificationCodeMessageTxt"
+            android:textColor="@color/thirdColor"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <com.chaos.view.PinView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:itemWidth="70dp"
+            app:itemHeight="70dp"
+            app:itemSpacing="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            app:lineColor="@color/secondaryColor"
+            android:itemBackground="@color/white"
+            style="@style/PinWidget.PinView"
+            android:inputType="number"
+            android:cursorVisible="true"
+            app:cursorColor="@color/black"
+            app:hideLineWhenFilled="true"
+            app:itemRadius="5dp" />
+
+        <Button
+            android:id="@+id/continueBtn"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/main_button_pattern"
+            android:text="@string/continueTxt"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:icon="@drawable/ic_baseline_arrow_forward_24"
+            app:iconGravity="end"
+            app:iconTint="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="85dp"
+                android:gravity="center"
+                android:text="00.25"
+                android:textColor="@color/thirdColor"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/resendCodeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:background="@color/transparent"
+                android:text="@string/resendCodeText"
+                android:textAlignment="center"
+                android:textColor="@color/thirdColor"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

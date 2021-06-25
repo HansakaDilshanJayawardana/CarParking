@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.InterProject">
-        <activity android:name=".login_signup"></activity>
+        <activity android:name=".google_map_location" />
+        <activity android:name=".verification_code" />
+        <activity android:name=".login_signup" />
         <activity android:name=".otp_Confirmation_activity" />
         <activity android:name=".MainActivity">
             <intent-filter>
