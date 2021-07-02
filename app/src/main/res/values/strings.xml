@@ -24,4 +24,16 @@
     <string name="drawerAboutUs">ABOUT US</string>
     <string name="drawerLogoutName">LOGOUT</string>
     <string name="mobileNumber">Mobile Number</string>
+    <string name="myBookingDrawer">My Booking</string>
+    <string name="findMyVehicle">Find My Vehicle</string>
+    <string name="rentYourSpot">Rent Your Spot</string>
+    <string name="drawerRentParking">Rent Parking</string>
+    <string name="weListen">We Listen</string>
+    <string name="drawerLogout">Logout</string>
+    <string name="drawerSettings">Settings</string>
+    <string name="drawerRateUs">Rate Us</string>
+    <string name="drawerShare">Share</string>
+    <string name="drawerReferAndEarn">Refer and Earn</string>
+    <string name="drawerFeedback">Feedback</string>
+    <string name="drawerHello">Hello !</string>
 </resources>

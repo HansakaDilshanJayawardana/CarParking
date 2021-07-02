@@ -4,56 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/transparent">
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_margin="16dp"
-        android:onClick="ClickLogo"
-        android:shape="ring"
-        android:src="@drawable/logo"/>
-
-    <TextView
-        android:id="@+id/drawerAppTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/appTitleName"
-        android:textAlignment="center"
-        android:textColor="@color/thirdColor"
-        android:textSize="25sp"
-        android:textStyle="bold" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@color/secondaryColor"/>
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="ClickHome">
-
-        <TextView
-            android:id="@+id/drawerHome"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_weight="1"
-            android:padding="20dp"
-            android:text="@string/drawerHomeName"
-            android:textColor="@color/thirdColor"
-            android:textSize="18dp"/>
+        android:background="@color/mainColorIntern">
 
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginEnd="48dp"
-            android:src="@drawable/ic_baseline_home_24" />
+            android:src="@drawable/ic_outline_cancel_24" />
 
     </LinearLayout>
 
@@ -62,24 +25,19 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="ClickDashboard">
+        android:background="@color/mainColorIntern"
+        android:layout_marginBottom="8dp">
 
         <TextView
-            android:id="@+id/drawerDashboard"
+            android:id="@+id/drawerHello"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_weight="1"
-            android:padding="20dp"
-            android:text="@string/drawerDashboard"
-            android:textColor="@color/thirdColor"
-            android:textSize="18dp"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="48dp"
-            android:src="@drawable/ic_dashboard"/>
+            android:padding="25dp"
+            android:text="@string/drawerHello"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
 
     </LinearLayout>
 
@@ -88,24 +46,54 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="ClickAbout">
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="4dp"
+        android:onClick="ClickMyBooking">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_baseline_event_available_24" />
 
         <TextView
-            android:id="@+id/drawerAbout"
+            android:id="@+id/drawerMyBooking"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_weight="1"
-            android:padding="20dp"
-            android:text="@string/drawerAboutUs"
+            android:padding="5dp"
+            android:text="@string/myBookingDrawer"
             android:textColor="@color/thirdColor"
             android:textSize="18dp" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="2dp"
+        android:onClick="ClickFindMyVehicle">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginEnd="48dp"
-            android:src="@drawable/ic_about"/>
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_baseline_find_in_page_24"/>
+
+        <TextView
+            android:id="@+id/drawerFindMyVehicle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/findMyVehicle"
+            android:textColor="@color/thirdColor"
+            android:textSize="18dp" />
 
     </LinearLayout>
 
@@ -114,24 +102,236 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:id="@+id/drawerRentYourSpot"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/rentYourSpot"
+            android:textColor="@color/thirdColor"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:onClick="ClickRentParking">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_baseline_directions_car_24"/>
+
+        <TextView
+            android:id="@+id/drawerRentParking"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/drawerRentParking"
+            android:textColor="@color/thirdColor"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:id="@+id/drawerWeListen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/weListen"
+            android:textColor="@color/thirdColor"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"
+        android:onClick="ClickFeedback">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_baseline_feedback_24"/>
+
+        <TextView
+            android:id="@+id/drawerFeedback"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/drawerFeedback"
+            android:textColor="@color/thirdColor"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:onClick="ClickReferAndEarn">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_baseline_local_offer_24"/>
+
+        <TextView
+            android:id="@+id/drawerReferAndEarn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/drawerReferAndEarn"
+            android:textColor="@color/thirdColor"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:onClick="ClickShare">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_baseline_share_24"/>
+
+        <TextView
+            android:id="@+id/drawerShare"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/drawerShare"
+            android:textColor="@color/thirdColor"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:onClick="ClickRateUs">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_baseline_stars_24"/>
+
+        <TextView
+            android:id="@+id/drawerRateUs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/drawerRateUs"
+            android:textColor="@color/thirdColor"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:onClick="ClickSettings">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_baseline_settings_24"/>
+
+        <TextView
+            android:id="@+id/drawerSettings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/drawerSettings"
+            android:textColor="@color/thirdColor"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
         android:onClick="ClickLogout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_logout"/>
 
         <TextView
             android:id="@+id/drawerLogout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_weight="1"
-            android:padding="20dp"
-            android:text="@string/drawerLogoutName"
+            android:padding="5dp"
+            android:text="@string/drawerLogout"
             android:textColor="@color/thirdColor"
             android:textSize="18dp" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="48dp"
-            android:src="@drawable/ic_logout"/>
 
     </LinearLayout>
 
